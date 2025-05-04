@@ -748,6 +748,7 @@ figure {
 }
 
 
+
 .infocontacto p{    
     font-size: 1.2rem;
     line-height: 1.5;
@@ -756,6 +757,7 @@ figure {
     width: 55%;
     background-color: #d3b2b2;
     margin-left: 30px;
-
+    overflow-wrap: break-word;
+    
     
 }
