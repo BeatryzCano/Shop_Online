@@ -1,0 +1,761 @@
+/*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
+-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*- ESTILOS GENERALES -*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
+-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*/
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 16px;
+}
+
+header{
+    background-image:linear-gradient(to right, #f2f2f2,#ba7373, #254a47);
+    padding: 20px 0;
+    text-align: center;
+}
+
+
+h1{
+    font-size: 6rem;
+    line-height: 1.2;
+    font-family: 'Dancing Script', cursive;
+    color: #1e3a38;
+    padding: 30px 30px;
+    font-weight: 900;
+}
+
+h2 {
+    font-size: 3rem;
+    line-height: 1.2;
+    font-family: 'Dancing Script', cursive;
+    color: #1e3a38;
+    padding: 30px 30px; 
+ }
+
+
+
+body{
+    font-size: 1rem;
+    line-height: 1.5;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #1e3a38;
+    background-image: url("./../assets/images/background/vintage-white-flower.jpg");
+    background-size: cover;
+    background-position: center;
+    opacity: 0.85; 
+ 
+      
+}
+
+
+
+nav ul{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    padding: 20px;
+    background-color: #a49a9a;
+   
+}
+nav ul li{
+  
+    flex-direction: row;
+    margin-right: 20px;
+    padding-left: 30px;
+  
+}
+nav ul li a{
+    text-decoration: none;
+    color: #1e3a38;
+    font-weight: 300;
+    letter-spacing: .09em;
+    text-transform: uppercase;
+}
+nav ul li a:hover{
+    color: #6c7574;
+}
+
+
+/* El nombre del enlace es ain por a(enlace) e in (dentro) en el que estamos*/
+.ain{
+   color:#ba7373;
+}
+
+main{
+    padding-bottom: 30px;
+    background-color: #f2f2f2;
+}
+section{
+    
+    background-color: #f2f2f2;
+  
+}
+
+main p{
+    font-size: 1.2rem;
+    line-height: 1.5;
+    color: #1e3a38;
+    
+    width: 75%;
+    background-color: #d3b2b2;
+    margin-left: 30px;
+    
+}
+
+
+
+
+
+
+table{
+   margin: 30px;
+}
+table {
+    
+   
+    border-collapse: collapse;
+    font-family: sans-serif;
+  }
+  
+  th, td {
+    border: 2px solid #ccc;
+    padding: 10px;
+    text-align: left;
+  }
+  
+  thead {
+    background-color: #254a47;
+    color: #f2f2f2;
+  }
+  
+
+footer{
+    background-color: #254a47;
+    color: #f2f2f2;
+    padding: 20px;
+    text-align: center;
+ 
+}
+
+.redesso{
+
+color: #f2f2f2;
+font-size: 2rem;
+
+}
+
+.socialmedia{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    list-style: none;
+    text-decoration: none;
+    
+}
+
+.socialmedia li{
+    color: #f2f2f2;
+}
+.socialmedia li a{
+    text-decoration: none;
+    color: #f2f2f2;
+}
+.socialmedia li a:hover{
+    color: #7c2e35;
+}
+
+.social-icons{
+    background-color: none;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.pie{
+    font-size: 1.2rem;
+    line-height: 1.5;
+
+   
+}
+
+.faviconlink{
+    
+  
+    color:#f2f2f2;
+    font-size: 0.8rem;
+    text-decoration: none;
+    
+}
+
+@media  (max-width: 480px) {
+    header h1 {
+        font-size: 3rem;
+    }
+    nav ul {
+        flex-direction: column;
+        
+    }
+
+    nav ul li {
+        margin-bottom: 10px;
+    }
+    section {
+        padding: 10px;
+    }
+    main p {
+        font-size: 1rem;
+        width: 90%;
+    }
+    footer {
+        padding: 10px;
+    }
+    
+    .sec2{
+        display: none
+    }
+
+   
+    
+}
+
+@media (min-width:481px) and (max-width: 1024px) {
+    header h1 {
+        font-size: 4rem;
+    }
+    nav ul {
+        flex-direction: row;
+        justify-content: center;
+    }
+    nav ul li {
+        margin-right: 10px;
+    }
+    section {
+        padding: 15px;
+    }
+    main p {
+        font-size: 1.2rem;
+        width: 80%;
+    }
+    footer {
+        padding: 15px;
+    }
+    
+}
+
+
+
+
+
+
+/*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
+-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*- ESTILOS INDEX -*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
+-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*/
+
+
+.mainindex{
+    display: grid;
+    grid-template-areas: 
+    "section1 section2"
+    "section3 section2";
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: auto auto
+
+   
+}
+.sec1 { 
+    grid-area: section1;
+   
+}
+
+.sec2 { 
+    grid-area: section2;
+    display: flex;
+    align-items: center;
+    
+}
+    
+.sec3 {
+    grid-area: section3;
+}
+
+    
+
+
+
+
+.portadapic {
+    width: 500px;
+    height: 800px;
+    object-fit: cover;
+    border-radius: 50%;
+    opacity: 1;
+}
+
+
+@media (max-width: 480px) {
+    .portadapic {
+       display : none;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 1024px) {
+    .portadapic {
+        width: 300px;
+        height: 400px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
+-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*- ESTILOS BODA -*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
+-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*/
+
+
+.mainbodas{
+    display: grid;
+    grid-template-areas: 
+    "secbo1 secbo2"
+    "secbo3 secbo4"
+    "secbo5 secbo5";
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: auto auto auto;
+    background-color: #f2f2f2;
+  
+   
+}
+.secbo1{
+    grid-area: secbo1;
+    
+}
+.secbo2{
+    grid-area: secbo2;
+
+}
+.secbo3{
+    grid-area: secbo3;
+    
+}
+.secbo4{
+    grid-area: secbo4;
+    
+}
+
+.secbo5{
+    grid-area: secbo5;
+    
+}
+
+
+
+.noviapic{
+    width: 500px;
+    height: 500px;
+    object-fit: contain;
+    opacity: 1;
+    padding-right: 30px;
+  
+  
+}
+
+.noviapic2{
+    width: 500px;
+    height: 500px;
+    object-fit: contain;
+    opacity: 1;
+    padding-right: 30px;
+ 
+}
+
+@media (max-width: 480px) {
+    .noviapic {
+       display : none;
+    }
+    .noviapic2 {
+        display : none;
+     }
+}
+
+@media (min-width: 481px) and (max-width: 1024px) {
+    .noviapic {
+        width: 300px;
+        height: 300px;
+    }
+    .noviapic2 {
+        width: 300px;
+        height: 300px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*-/*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
+-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*- ESTILOS FUNERAL -*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
+-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*/
+
+
+
+.mainfuneral{
+    display: grid;
+    grid-template-areas: 
+    "secfu1 secfu2"
+    "secfu3 secfu2";
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: auto auto;
+    background-color: #f2f2f2;
+}
+
+.coronapic{
+    width: 500px;
+    height: 500px;
+    object-fit: contain;
+    opacity: 1;
+    padding-right: 30px;
+  
+}
+
+.secfu1{
+    grid-area: secfu1;
+    
+}
+.secfu2{
+    grid-area: secfu2;
+    display: flex;
+    align-items: center;
+    
+}
+.secfu3{
+    grid-area: secfu3;
+    
+}
+
+@media (max-width: 480px) {
+    .coronapic {
+       display : none;
+    }
+}
+@media (min-width: 481px) and (max-width: 1024px) {
+    .coronapic {
+        width: 300px;
+        height: 300px;
+    }
+}
+
+
+
+
+
+
+/*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
+-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*- ESTILOS GALERIA -*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
+-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*/
+
+.sectgale{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-left: 30px;
+    }
+
+
+
+  .galepic{
+    width: 280px;
+    height: 300px;
+    object-fit: cover;
+    opacity: 1;
+    padding: 30px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+;
+  
+}
+
+figure {
+    display: inline-block;
+    margin: 0 10px;
+    text-align: center;
+    width: 280px; /* o el ancho que uses para tus imágenes */
+  }
+  
+  figure img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  details {
+    width: 100%;
+    margin-top: 8px;
+    background-color: #d8bbbb;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    padding-left: 30px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-size: 1rem;
+    text-align: left;
+    box-shadow: #6c7574 0px 2px 2px;
+    transition: all 0.3s ease;
+  }
+  
+ details summary {
+    cursor: pointer;
+    font-weight: bold;
+    color: #254a47;
+    list-style: none;
+  }
+  
+  @media (max-width: 480px) {
+    .galepic {
+    
+      width: 350px;
+      height: 370px;
+
+    }
+  
+    figure {
+      width: 350px;
+    }
+  }
+
+  @media (min-width: 481px) and (max-width: 1024px) {
+    .galepic {
+      width: 370px;
+      height: 390px;
+    }
+  
+    figure {
+      width: 370px;
+    }
+  }
+
+
+
+
+
+
+
+/*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
+-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*- ESTILOS PRESUPUESTOS -*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
+-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*/
+
+.container{
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 5% 0;
+    background-color: #b5b1b1;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+
+/* Estilos para los elementos del container */
+.container *{
+    box-sizing: border-box;
+}
+
+/* Estilos de las listas */
+.flex-outer{
+    list-style-type: none;
+    padding: 0;
+}
+
+/* Estilos de la lista principal */
+.flex-outer{
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.flex-outer li{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+
+
+.flex-outer > li:not(:last-child){
+    margin-bottom: 20px;
+}
+
+.flex-outer li label, .flex-outer li p{
+    padding: 8px;
+    font-weight: 300;
+    letter-spacing: .09em;
+    text-transform: uppercase;
+}
+
+.flex-outer > li >label, .flex-outer li p{
+    flex: 1 0 120px;
+    max-width: 220px;
+}
+
+.flex-outer > li > label + *{
+    flex: 1 0 220px;
+}
+
+.flex-outer li p{
+    margin: 0;
+}
+
+.flex-outer li input:not([type='radio']), .flex-outer li textarea{
+    padding: 15px;
+    border: none;
+}
+
+.flex-outer .liButtons button{
+    margin-left: auto;
+    padding: 8px 16px;
+    border: none;
+    background-color: #254a47;
+    color: #f2f2f2;
+    text-transform: uppercase;
+    letter-spacing: 0.09em;
+    border-radius: 6px;
+}
+
+.flex-outer .liButtons{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.acepto{
+    list-style: none;
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 5% 0;
+
+}
+
+
+
+/*  Estilos para tablets (hasta 1024px) */
+@media (min-width:481px) and (max-width: 1024px) {
+    .container {
+      width: 90%;
+      padding: 4% 0;
+    }
+  
+    .flex-outer > li > label,
+    .flex-outer li p,
+    .flex-outer > li > label + *
+    {
+      flex: 1 0 100%;
+      max-width: 100%;
+    }
+  
+    .flex-outer .liButtons {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .flex-outer .liButtons button {
+      width: 100%;
+      margin-left: 0;
+      margin-top: 10px;
+    }
+  }
+  
+  /*  Estilos para móviles (hasta 480px) */
+  @media (max-width: 480px) {
+    .container {
+      width: 95%;
+      padding: 4% 0;
+    }
+  
+    .flex-outer li {
+      flex-direction: column;
+      align-items: stretch;
+    }
+  
+    .flex-outer > li > label,
+    .flex-outer li p,
+    .flex-outer > li > label + *
+    {
+      flex: 1 0 100%;
+      max-width: 100%;
+    }
+  
+    .flex-outer li input:not([type='radio']),
+    .flex-outer li textarea {
+      width: 100%;
+    }
+  
+    .flex-outer .liButtons {
+      flex-direction: column;
+      align-items: stretch;
+    }
+  
+    .flex-outer .liButtons button {
+      width: 100%;
+      margin-left: 0;
+      margin-top: 10px;
+    }
+  }
+  
+  
+
+
+
+
+/*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
+-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*- ESTILOS CONTACTO -*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
+-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*/
+
+.secmap{
+    align-items: center;
+}
+
+.mapa{
+    padding: 30px;
+    width: 90%;
+}
+
+
+.infocontacto p{    
+    font-size: 1.2rem;
+    line-height: 1.5;
+    color: #1e3a38;
+    padding: 10px 30px;
+    width: 55%;
+    background-color: #d3b2b2;
+    margin-left: 30px;
+
+    
+}
